@@ -1,4 +1,4 @@
-<%--
+<%@ page import="controller.TestController" %><%--
   Created by IntelliJ IDEA.
   User: ale
   Date: 6/2/19
@@ -11,6 +11,13 @@
     <title>$Title$</title>
   </head>
   <body>
-  $END$
+    <%!
+        TestController test = new TestController();
+
+    %>
+    <%
+        test.getAll();
+    %>
+
   </body>
 </html>
